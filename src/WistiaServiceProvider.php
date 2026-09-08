@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeffersongoncalves\Wistia;
+namespace JeffersonGoncalves\Wistia;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -11,8 +11,6 @@ class WistiaServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-wistia')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->hasConfigFile();
     }
 }

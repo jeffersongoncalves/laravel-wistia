@@ -1,3 +1,8 @@
 <?php
 
-uses(Jeffersongoncalves\Wistia\Tests\TestCase::class)->in('Feature', 'Unit');
+use Illuminate\Support\Facades\Http;
+use JeffersonGoncalves\Wistia\Tests\TestCase;
+
+uses(TestCase::class)
+    ->beforeEach(fn () => Http::preventStrayRequests())
+    ->in('Feature');

@@ -3,36 +3,42 @@
     "description": "A lightweight Wistia Data API client for Laravel.",
     "keywords": [
         "laravel",
-        "laravel-wistia"
+        "wistia",
+        "wistia-api",
+        "video",
+        "rest",
+        "client",
+        "http"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-wistia",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jefferson Simão Gonçalves",
-            "email": "gerson.simao.92@gmail.com"
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "homepage": "https://github.com/jeffersongoncalves"
         }
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^12.0|^13.0"
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.21",
-        "orchestra/testbench": "^10.0|^11.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
         "pestphp/pest": "^3.0|^4.0",
         "pestphp/pest-plugin-laravel": "^3.0|^4.0"
     },
     "autoload": {
         "psr-4": {
-            "Jeffersongoncalves\\Wistia\\": "src/"
+            "JeffersonGoncalves\\Wistia\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jeffersongoncalves\\Wistia\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Wistia\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -52,11 +58,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jeffersongoncalves\\Wistia\\WistiaServiceProvider"
-            ],
-            "aliases": {
-                "Wistia": "Jeffersongoncalves\\Wistia\\Facades\\Wistia"
-            }
+                "JeffersonGoncalves\\Wistia\\WistiaServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
